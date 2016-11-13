@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GymTrack - Workout Log</string>
+    <string name="title">GymTrack</string>
+    <string name="title_activity_workout">WorkoutActivity</string>
+</resources>
