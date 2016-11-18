@@ -1,8 +1,20 @@
 <resources>
     <string name="app_name">GymTrack - Workout Log</string>
-    <string name="title">GymTrack</string>
+    <string name="title">Gym Track</string>
     <string name="title_activity_workout">WorkoutActivity</string>
     <string name="sign_in">Sign in with Google</string>
     <string name="why_sign_in">Sign in with your Google account to save your workouts</string>
     <string name="sign_out">Sign Out</string>
+    <string name="info">Info</string>
+    <string name="contact">Contact</string>
+    <string name="shoulders">Shoulders</string>
+    <string name="triceps">Triceps</string>
+    <string name="biceps">Biceps</string>
+    <string name="chest">Chest</string>
+    <string name="back">Back</string>
+    <string name="legs">Legs</string>
+    <string name="abs">Abs</string>
+    <string name="cardio">Cardio</string>
+    <string name="selectCategory">Select an exersice category</string>
+
 </resources>
