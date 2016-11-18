@@ -4,4 +4,5 @@
     <string name="title_activity_workout">WorkoutActivity</string>
     <string name="sign_in">Sign in with Google</string>
     <string name="why_sign_in">Sign in with your Google account to save your workouts</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
