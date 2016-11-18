@@ -18,7 +18,8 @@
         <activity
             android:name=".WorkoutActivity"
             android:label="@string/title_activity_workout"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignInActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "419725099564",
+    "firebase_url": "https://gymtrack-57948.firebaseio.com",
+    "project_id": "gymtrack-57948",
+    "storage_bucket": "gymtrack-57948.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419725099564:android:a657b4fb88af38a4",
+        "android_client_info": {
+          "package_name": "udem.gymtrack_workoutlog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419725099564-jd4dfkoj6fvotr8i3g7ectg7mvuqt9v7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "udem.gymtrack_workoutlog",
+            "certificate_hash": "DD7F5FDFD934D1BD755211F66E6ECF9F8DDDBD44"
+          }
+        },
+        {
+          "client_id": "419725099564-3tu0i4bqjfb8ec76ghs13l4qdq3p4apo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgo0L3RbL6DdA_MrekqVNN1lk038pFqC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419725099564-3tu0i4bqjfb8ec76ghs13l4qdq3p4apo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
