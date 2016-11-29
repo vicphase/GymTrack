@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GymTrack - Workout Log</string>
     <string name="title">Gym Track</string>
-    <string name="title_activity_workout">WorkoutActivity</string>
+    <string name="title_activity_workout">Your Workout</string>
     <string name="sign_in">Sign in with Google</string>
     <string name="why_sign_in">Sign in with your Google account to save your workouts</string>
     <string name="sign_out">Sign Out</string>
@@ -16,5 +16,7 @@
     <string name="abs">Abs</string>
     <string name="cardio">Cardio</string>
     <string name="selectCategory">Select an exersice category</string>
-
+    <string name="startWorkout">Select a day to see your workout</string>
+    <string name="exersiceInformation">Complete your exersice information</string>
+    <string name="save">Save</string>
 </resources>

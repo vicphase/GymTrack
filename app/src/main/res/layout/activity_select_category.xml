@@ -42,7 +42,10 @@
             android:layout_width="90dp"
             android:paddingTop="20dp"
             android:gravity="center"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:tag="Shoulders"
+            android:onClick="onClick"
+            android:id="@+id/buttonShoulders" />
 
         <Button
             android:layout_marginLeft="10dp"
@@ -53,7 +56,10 @@
             android:textColor="#fff"
             tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded"
             android:layout_height="90dp"
-            android:layout_width="90dp" />
+            android:layout_width="90dp"
+            android:tag="Triceps"
+            android:onClick="onClick"
+            android:id="@+id/buttonTriceps" />
     </LinearLayout>
 
     <LinearLayout
@@ -71,7 +77,10 @@
             android:layout_marginRight="40dp"
             tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded"
             android:layout_height="90dp"
-            android:layout_width="90dp" />
+            android:layout_width="90dp"
+            android:tag="Biceps"
+            android:onClick="onClick"
+            android:id="@+id/buttonBiceps" />
 
         <Button
             android:layout_marginLeft="10dp"
@@ -82,7 +91,10 @@
             android:textColor="#fff"
             tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded"
             android:layout_height="90dp"
-            android:layout_width="90dp" />
+            android:layout_width="90dp"
+            android:tag="Chest"
+            android:onClick="onClick"
+            android:id="@+id/buttonChest" />
     </LinearLayout>
 
     <LinearLayout
@@ -100,7 +112,10 @@
             android:layout_marginRight="40dp"
             tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded"
             android:layout_height="90dp"
-            android:layout_width="90dp" />
+            android:layout_width="90dp"
+            android:tag="Back"
+            android:onClick="onClick"
+            android:id="@+id/buttonBack" />
 
         <Button
             android:layout_marginLeft="10dp"
@@ -111,7 +126,10 @@
             android:textColor="#fff"
             tools:ignore="ButtonStyle,RtlHardcoded"
             android:layout_height="90dp"
-            android:layout_width="90dp" />
+            android:layout_width="90dp"
+            android:tag="Legs"
+            android:onClick="onClick"
+            android:id="@+id/buttonLegs" />
     </LinearLayout>
 
     <LinearLayout
@@ -128,7 +146,10 @@
             android:layout_marginRight="40dp"
             tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded"
             android:layout_height="90dp"
-            android:layout_width="90dp" />
+            android:layout_width="90dp"
+            android:tag="Abs"
+            android:onClick="onClick"
+            android:id="@+id/buttonAbs" />
 
         <Button
             android:layout_marginLeft="10dp"
@@ -139,7 +160,10 @@
             android:textColor="#fff"
             tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded"
             android:layout_height="90dp"
-            android:layout_width="90dp" />
+            android:layout_width="90dp"
+            android:tag="Cardio"
+            android:onClick="onClick"
+            android:id="@+id/buttonCardio" />
     </LinearLayout>
 
 

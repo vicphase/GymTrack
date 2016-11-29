@@ -17,10 +17,11 @@
         </activity>
         <activity
             android:name=".WorkoutActivity"
-            android:label="@string/title_activity_workout"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/title_activity_workout" />
         <activity android:name=".SignInActivity" />
-        <activity android:name=".SelectCategoryActivity"></activity>
+        <activity android:name=".SelectCategoryActivity" />
+        <activity android:name=".EditExersiceWeightActivity" />
+        <activity android:name=".EditExersiceCardioActivity" />
     </application>
 
 </manifest>

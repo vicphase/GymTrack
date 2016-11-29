@@ -1,50 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
 
-        <LinearLayout
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/exersiceNameTextView"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:layout_marginTop="10dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/exersiceNameTextView" />
-
-            <TableLayout
+                android:text="TextView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0">
+                android:layout_height="wrap_content"
+                android:id="@+id/exersiceSecondDataTextView"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText,NestedWeights"
+                android:gravity="center" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="1.0">
-
-                    <TextView
-                        android:text="TextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/exersiceSecondDataTextView"
-                        android:layout_weight="0.5"/>
-
-                    <TextView
-                        android:id="@+id/exersiceFirstDataTextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.5" />
-                </TableRow>
-
-            </TableLayout>
-
+            <TextView
+                android:id="@+id/exersiceFirstDataTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                tools:ignore="HardcodedText"
+                android:gravity="center" />
         </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>

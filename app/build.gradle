@@ -63,6 +63,9 @@ dependencies {
 
     // Calendar material design
     compile 'com.prolificinteractive:material-calendarview:1.4.2'
+
+    //Recycler View
+    compile 'com.android.support:recyclerview-v7:21.0.+'
 }
 
 apply plugin: 'com.google.gms.google-services'

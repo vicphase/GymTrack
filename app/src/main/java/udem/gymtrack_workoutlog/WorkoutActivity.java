@@ -1,11 +1,9 @@
 package udem.gymtrack_workoutlog;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -22,7 +20,9 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
-import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
+import com.prolificinteractive.materialcalendarview.CalendarDay;
+
+import java.io.Serializable;
 
 import static udem.gymtrack_workoutlog.MainActivity.ANONYMOUS;
 
@@ -38,26 +38,24 @@ public class WorkoutActivity extends AppCompatActivity implements GoogleApiClien
     private DatabaseReference mFirebaseDatabaseReference;
     private FirebaseRecyclerAdapter<Workout, MainActivity.ExerciseViewHolder>
             mFirebaseAdapter;
+
+    //Global variables
+    Workout workout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout);
         Bundle extras = getIntent().getExtras();
-
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
+          // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+           //setSupportActionBar(toolbar);
         authenticate();
+        CalendarDay day = (CalendarDay) extras.get("Day");
+        if (day != null) {
+            System.out.println("El día de hoy es "+day.toString());
+        }
+        workout = new Workout(day);
     }
 
     //Initialize menu
@@ -112,4 +110,17 @@ public class WorkoutActivity extends AppCompatActivity implements GoogleApiClien
         Log.d(TAG, "onConnectionFailed:" + connectionResult);
         Toast.makeText(this, "Google Play Services error.", Toast.LENGTH_SHORT).show();
     }
+
+    public void addExersice(View view) {
+        Intent intent = new Intent(this, SelectCategoryActivity.class);
+        startActivityForResult(intent, 777);
+    }
+
+    @Override
+    protected void onActivityResult (int requestCode,
+                                     int resultCode, Intent data){
+        if (requestCode==777 && resultCode==RESULT_OK) {
+            Exercise exercise = (Exercise) data.getExtras().get("Exersice");
+            System.out.println("Se creo el ejercicio! "+exercise.toString());
+        }}
 }
